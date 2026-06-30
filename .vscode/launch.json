@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/Admin/Desktop/Programing project/fnaf/fnaf",
-      "program": "c:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build/Debug/outDebug",
+      "program": "${fileDirname}/main.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
