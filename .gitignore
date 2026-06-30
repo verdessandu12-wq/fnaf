@@ -37,3 +37,5 @@ Thumbs.db
 # Resurse Joc (Asigură-te că NU le ignori)
 # ====================================================================
 !/assets/
+!/src/
+!/song/
