@@ -1,0 +1,39 @@
+# ====================================================================
+# Executabile și Fișiere de compilare (MSYS2 / MinGW64)
+# ====================================================================
+# Ignoră executabilul generat pe Windows
+*.exe
+
+# Ignoră fișierele obiect și librăriile statice/dinamice
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+
+# Dacă scriptul tău din tasks.json scoate executabilul într-un folder separat
+[Bb]in/
+[Oo]bj/
+
+# ====================================================================
+# Visual Studio Code (Configurații de proiect)
+# ====================================================================
+.vscode/
+# PERMITE partajarea setărilor de compilare cu echipa:
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+# IGNORĂ cache-ul local de intellisense (foarte important pentru C++)
+.vscode/.browse.VC.db
+.vscode/ipch/
+
+# ====================================================================
+# Sistemul de operare și altele
+# ====================================================================
+.DS_Store
+Thumbs.db
+
+# ====================================================================
+# Resurse Joc (Asigură-te că NU le ignori)
+# ====================================================================
+!/assets/
