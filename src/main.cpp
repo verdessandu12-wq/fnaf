@@ -3,6 +3,7 @@
 #include "camera.hpp"
 #include "sixam.hpp"
 #include "screamer.hpp"
+#include "pad.hpp"
 #include "raylib.h"
 #include <iostream>
 
@@ -13,7 +14,8 @@ enum class scen{
     gameplay,
     camera,
     screamer,
-    sixam
+    sixam,
+    pad
 };
 
 int main(int argc, char *argv[]){
@@ -25,17 +27,21 @@ int main(int argc, char *argv[]){
     InitAudioDevice();
     gameplay game1;
     camera camera1;
+    animPad pad;
     game1.import_variable();
     camera1.import_variable();
+    pad.importVariable(); 
     SetTargetFPS(60);
     while(!WindowShouldClose()){
+        pad.logic();
         if(IsKeyPressed(KEY_ESCAPE)){
             break;
         }
-        if(IsKeyPressed(KEY_SPACE)){
+        if(IsKeyPressed(KEY_SPACE) && !pad.tap){
             inCamera = !inCamera;
+            pad.tap = true;
         }
-        if(inCamera){
+        if(inCamera && pad.num >= 3){
             currentScen = scen::camera;
         }
         if(!inCamera){
@@ -55,6 +61,7 @@ int main(int argc, char *argv[]){
             if (currentScen == scen::camera){
             camera1.rendering();
             }
+            pad.startAnim();
             
     EndDrawing();
     }
