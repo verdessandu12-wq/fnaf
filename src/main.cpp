@@ -19,7 +19,7 @@ enum class scen{
 };
 
 int main(int argc, char *argv[]){
-    scen currentScen = scen::camera;
+    scen currentScen = scen::sixam;
     float w = 1280, h = 720;
     bool inCamera = false;
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
@@ -28,9 +28,11 @@ int main(int argc, char *argv[]){
     gameplay game1;
     camera camera1;
     animPad pad;
+    sixam sixamh;
     game1.import_variable();
     camera1.import_variable();
     pad.importVariable(); 
+    sixamh.importVariable();
     SetTargetFPS(60);
     while(!WindowShouldClose()){
         pad.logic();
@@ -41,10 +43,10 @@ int main(int argc, char *argv[]){
             inCamera = !inCamera;
             pad.tap = true;
         }
-        if(inCamera && pad.num >= 3){
+        if(inCamera && pad.num >= 3 && currentScen != scen::sixam){
             currentScen = scen::camera;
         }
-        if(!inCamera){
+        if(!inCamera && currentScen != scen::sixam){
             currentScen = scen::gameplay;
         }
         if (currentScen == scen::gameplay){
@@ -52,6 +54,9 @@ int main(int argc, char *argv[]){
         }
         if (currentScen == scen::camera){
         camera1.switch_room();
+        }
+        if (currentScen == scen::sixam){
+        sixamh.logic();
         }
     BeginDrawing();
             ClearBackground({0, 0, 0, 255});
@@ -61,11 +66,18 @@ int main(int argc, char *argv[]){
             if (currentScen == scen::camera){
             camera1.rendering();
             }
+            if (currentScen != scen::sixam && currentScen != scen::screamer && currentScen != scen::menu){
             pad.startAnim();
-            
+            }
+            if (currentScen == scen::sixam){
+        sixamh.rendering();
+        }
     EndDrawing();
     }
-    cout << game1.fx << "\n" << game1.fy << "\n" << game1.wf << "\n" << game1.hf;
+    //cout << game1.fx << "\n" << game1.fy << "\n" << game1.wf << "\n" << game1.hf;
+    for(int i = 0; i < 46; i++){
+    UnloadTexture(sixamh.sixamobj[i].texture);
+    }
     CloseAudioDevice();
     CloseWindow();
     return 0;

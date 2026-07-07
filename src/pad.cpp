@@ -1,4 +1,5 @@
 #include "pad.hpp"
+#include "shader.hpp"
 #include <vector>
 #include "raylib.h"
 #include <string>
@@ -12,6 +13,7 @@ void animPad::importVariable(){
         Texture2D temp = LoadTexture(path.c_str());
         pad.push_back(temp);
     }
+    shader1.init();
     source = {0, 0, 2112, 1320};
     w = 1280;
     h = 720;
@@ -43,8 +45,13 @@ void animPad::logic(){
 }
 }
 void animPad::startAnim(){
+    BeginShaderMode(shader1.firstShader);
     if(tap){
         DrawTexturePro(pad[num], source, dest, {0.0f, 0.0f}, 0.0f, WHITE);
     }
+    EndShaderMode();
+}
+void animPad::unload(){
+    shader1.cleanUp();
 }
 
