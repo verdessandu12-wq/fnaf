@@ -3,14 +3,14 @@
 #include <vector>
 #include "raylib.h"
 #include "shader.hpp"
+#include "sablonClass.hpp"
 using namespace std;
 class animPad{
     public:
     shaderClass shader1;
-    vector<Texture2D> pad;
+    vector<imgClass> pad;
     int num, coef, result;
     float w, h, timer, timerX;
-    Rectangle dest, source;
     bool tap;
     void importVariable();
     void logic();

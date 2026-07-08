@@ -19,7 +19,7 @@ enum class scen{
 };
 
 int main(int argc, char *argv[]){
-    scen currentScen = scen::sixam;
+    scen currentScen = scen::gameplay;
     float w = 1280, h = 720;
     bool inCamera = false;
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
@@ -38,6 +38,9 @@ int main(int argc, char *argv[]){
         pad.logic();
         if(IsKeyPressed(KEY_ESCAPE)){
             break;
+        }
+        if(IsKeyPressed(KEY_C)){
+            currentScen = scen::sixam;
         }
         if(IsKeyPressed(KEY_SPACE) && !pad.tap){
             inCamera = !inCamera;
@@ -58,20 +61,23 @@ int main(int argc, char *argv[]){
         if (currentScen == scen::sixam){
         sixamh.logic();
         }
+        if(sixamh.globalTimer >= sixamh.final){
+            currentScen == scen::sixam;
+        }
     BeginDrawing();
             ClearBackground({0, 0, 0, 255});
             if (currentScen == scen::gameplay){
-            game1.rendering();
+                game1.rendering();
             }
             if (currentScen == scen::camera){
-            camera1.rendering();
+                camera1.rendering();
             }
             if (currentScen != scen::sixam && currentScen != scen::screamer && currentScen != scen::menu){
-            pad.startAnim();
+                pad.startAnim();
             }
             if (currentScen == scen::sixam){
-        sixamh.rendering();
-        }
+                sixamh.rendering();
+            }
     EndDrawing();
     }
     //cout << game1.fx << "\n" << game1.fy << "\n" << game1.wf << "\n" << game1.hf;

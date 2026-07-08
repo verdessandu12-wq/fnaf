@@ -5,8 +5,9 @@
 #include <vector>
 class sixam {
     public:
-    float w, h, timer;
+    float w, h, timer, globalTimer, final;
     int numberi;
+    Music end;
     std::vector<imgClass> sixamobj;
     void importVariable();
     void rendering();

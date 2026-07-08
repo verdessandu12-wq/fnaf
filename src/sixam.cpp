@@ -18,21 +18,29 @@ void sixam::importVariable(){
         Color tempCol = WHITE;
         sixamobj.emplace_back(tempTexture, tempSource, tempDest, tempOrigin, 0.0f, tempCol);
     }
+    end = LoadMusicStream("../song/sixam.mp3");
     numberi = 0;
+    PlayMusicStream(end);
 }
 void sixam::rendering(){
     timer += GetFrameTime();
     DrawTexturePro(sixamobj[numberi].texture, sixamobj[numberi].source, sixamobj[numberi].dest, sixamobj[numberi].origin, sixamobj[numberi].angle, sixamobj[numberi].col);
     if(timer >= 0.1f){
-        numberi++;
-        timer = 0.0f;
+        if(numberi != 17){
+            numberi++;
+            timer = 0.0f;
+        }
+        else if(numberi == 17 && timer >= 5.5f){
+            numberi++;
+            timer = 0.0f;
+        }
     }
     if(numberi >= sixamobj.size()){
         numberi = 0;
     }
       
-    
+    UpdateMusicStream(end);
 }
 void sixam::logic(){
-    
+    globalTimer += GetFrameTime();
 }
