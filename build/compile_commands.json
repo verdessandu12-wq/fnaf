@@ -1,0 +1,56 @@
+[
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\camera.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\camera.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/camera.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\gameplay.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\gameplay.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/gameplay.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\main.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\main.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/main.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\menu.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\menu.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/menu.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\pad.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\pad.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/pad.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\sablonClass.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\sablonClass.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/sablonClass.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\screamer.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\screamer.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/screamer.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\shader.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\shader.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/shader.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj"
+},
+{
+  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\JoculMeuRaylib.dir\\src\\sixam.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\sixam.cpp\"",
+  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/sixam.cpp",
+  "output": "CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj"
+}
+]

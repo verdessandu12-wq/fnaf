@@ -19,13 +19,6 @@
 # Visual Studio Code (Configurații de proiect)
 # ====================================================================
 .vscode/
-# PERMITE partajarea setărilor de compilare cu echipa:
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/settings.json
-# IGNORĂ cache-ul local de intellisense (foarte important pentru C++)
-.vscode/.browse.VC.db
-.vscode/ipch/
 
 # ====================================================================
 # Sistemul de operare și altele
