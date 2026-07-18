@@ -71,161 +71,65 @@ include CMakeFiles/JoculMeuRaylib.dir/flags.make
 CMakeFiles/JoculMeuRaylib.dir/codegen:
 .PHONY : CMakeFiles/JoculMeuRaylib.dir/codegen
 
-CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/camera.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\camera.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\camera.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\camera.cpp"
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/animatronics/Anila.cpp
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Anila.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Anila.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Anila.cpp"
 
-CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\camera.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\camera.cpp.i
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Anila.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Anila.cpp.i
 
-CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\camera.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\camera.cpp.s
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Anila.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Anila.cpp.s
 
-CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/gameplay.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\gameplay.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\gameplay.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\gameplay.cpp"
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/animatronics/Asad.cpp
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Asad.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Asad.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Asad.cpp"
 
-CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\gameplay.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\gameplay.cpp.i
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Asad.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Asad.cpp.i
 
-CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\gameplay.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\gameplay.cpp.s
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Asad.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Asad.cpp.s
 
-CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/main.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\main.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\main.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\main.cpp"
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/animatronics/Ixel.cpp
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Ixel.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Ixel.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Ixel.cpp"
 
-CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\main.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\main.cpp.i
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Ixel.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Ixel.cpp.i
 
-CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\main.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\main.cpp.s
-
-CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/menu.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\menu.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\menu.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\menu.cpp"
-
-CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\menu.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\menu.cpp.i
-
-CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\menu.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\menu.cpp.s
-
-CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/pad.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\pad.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\pad.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\pad.cpp"
-
-CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\pad.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\pad.cpp.i
-
-CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\pad.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\pad.cpp.s
-
-CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/sablonClass.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\sablonClass.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\sablonClass.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\sablonClass.cpp"
-
-CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\sablonClass.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\sablonClass.cpp.i
-
-CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\sablonClass.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\sablonClass.cpp.s
-
-CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/screamer.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\screamer.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\screamer.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\screamer.cpp"
-
-CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\screamer.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\screamer.cpp.i
-
-CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\screamer.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\screamer.cpp.s
-
-CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/shader.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\shader.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\shader.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\shader.cpp"
-
-CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\shader.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\shader.cpp.i
-
-CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\shader.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\shader.cpp.s
-
-CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/flags.make
-CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/sixam.cpp
-CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj: CMakeFiles/JoculMeuRaylib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj -MF CMakeFiles\JoculMeuRaylib.dir\src\sixam.cpp.obj.d -o CMakeFiles\JoculMeuRaylib.dir\src\sixam.cpp.obj -c "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\sixam.cpp"
-
-CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\sixam.cpp" > CMakeFiles\JoculMeuRaylib.dir\src\sixam.cpp.i
-
-CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\sixam.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\sixam.cpp.s
+CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\src\animatronics\Ixel.cpp" -o CMakeFiles\JoculMeuRaylib.dir\src\animatronics\Ixel.cpp.s
 
 # Object files for target JoculMeuRaylib
 JoculMeuRaylib_OBJECTS = \
-"CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj" \
-"CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj"
+"CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj" \
+"CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj" \
+"CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj"
 
 # External object files for target JoculMeuRaylib
 JoculMeuRaylib_EXTERNAL_OBJECTS =
 
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj
-JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj
+JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj
+JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj
+JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj
 JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/build.make
 JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/linkLibs.rsp
 JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/objects1.rsp
 JoculMeuRaylib.exe: CMakeFiles/JoculMeuRaylib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable JoculMeuRaylib.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Admin\Desktop\Programing project\fnaf\fnaf\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable JoculMeuRaylib.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\JoculMeuRaylib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

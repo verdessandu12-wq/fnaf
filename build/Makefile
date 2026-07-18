@@ -128,221 +128,77 @@ JoculMeuRaylib/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/build
 .PHONY : JoculMeuRaylib/fast
 
-src/camera.obj: src/camera.cpp.obj
-.PHONY : src/camera.obj
+src/animatronics/Anila.obj: src/animatronics/Anila.cpp.obj
+.PHONY : src/animatronics/Anila.obj
 
 # target to build an object file
-src/camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.obj
-.PHONY : src/camera.cpp.obj
+src/animatronics/Anila.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.obj
+.PHONY : src/animatronics/Anila.cpp.obj
 
-src/camera.i: src/camera.cpp.i
-.PHONY : src/camera.i
+src/animatronics/Anila.i: src/animatronics/Anila.cpp.i
+.PHONY : src/animatronics/Anila.i
 
 # target to preprocess a source file
-src/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.i
-.PHONY : src/camera.cpp.i
+src/animatronics/Anila.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.i
+.PHONY : src/animatronics/Anila.cpp.i
 
-src/camera.s: src/camera.cpp.s
-.PHONY : src/camera.s
+src/animatronics/Anila.s: src/animatronics/Anila.cpp.s
+.PHONY : src/animatronics/Anila.s
 
 # target to generate assembly for a file
-src/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/camera.cpp.s
-.PHONY : src/camera.cpp.s
+src/animatronics/Anila.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Anila.cpp.s
+.PHONY : src/animatronics/Anila.cpp.s
 
-src/gameplay.obj: src/gameplay.cpp.obj
-.PHONY : src/gameplay.obj
+src/animatronics/Asad.obj: src/animatronics/Asad.cpp.obj
+.PHONY : src/animatronics/Asad.obj
 
 # target to build an object file
-src/gameplay.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.obj
-.PHONY : src/gameplay.cpp.obj
+src/animatronics/Asad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.obj
+.PHONY : src/animatronics/Asad.cpp.obj
 
-src/gameplay.i: src/gameplay.cpp.i
-.PHONY : src/gameplay.i
+src/animatronics/Asad.i: src/animatronics/Asad.cpp.i
+.PHONY : src/animatronics/Asad.i
 
 # target to preprocess a source file
-src/gameplay.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.i
-.PHONY : src/gameplay.cpp.i
+src/animatronics/Asad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.i
+.PHONY : src/animatronics/Asad.cpp.i
 
-src/gameplay.s: src/gameplay.cpp.s
-.PHONY : src/gameplay.s
+src/animatronics/Asad.s: src/animatronics/Asad.cpp.s
+.PHONY : src/animatronics/Asad.s
 
 # target to generate assembly for a file
-src/gameplay.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/gameplay.cpp.s
-.PHONY : src/gameplay.cpp.s
+src/animatronics/Asad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Asad.cpp.s
+.PHONY : src/animatronics/Asad.cpp.s
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/animatronics/Ixel.obj: src/animatronics/Ixel.cpp.obj
+.PHONY : src/animatronics/Ixel.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/animatronics/Ixel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.obj
+.PHONY : src/animatronics/Ixel.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/menu.obj: src/menu.cpp.obj
-.PHONY : src/menu.obj
-
-# target to build an object file
-src/menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.obj
-.PHONY : src/menu.cpp.obj
-
-src/menu.i: src/menu.cpp.i
-.PHONY : src/menu.i
+src/animatronics/Ixel.i: src/animatronics/Ixel.cpp.i
+.PHONY : src/animatronics/Ixel.i
 
 # target to preprocess a source file
-src/menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.i
-.PHONY : src/menu.cpp.i
+src/animatronics/Ixel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.i
+.PHONY : src/animatronics/Ixel.cpp.i
 
-src/menu.s: src/menu.cpp.s
-.PHONY : src/menu.s
-
-# target to generate assembly for a file
-src/menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/menu.cpp.s
-.PHONY : src/menu.cpp.s
-
-src/pad.obj: src/pad.cpp.obj
-.PHONY : src/pad.obj
-
-# target to build an object file
-src/pad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.obj
-.PHONY : src/pad.cpp.obj
-
-src/pad.i: src/pad.cpp.i
-.PHONY : src/pad.i
-
-# target to preprocess a source file
-src/pad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.i
-.PHONY : src/pad.cpp.i
-
-src/pad.s: src/pad.cpp.s
-.PHONY : src/pad.s
+src/animatronics/Ixel.s: src/animatronics/Ixel.cpp.s
+.PHONY : src/animatronics/Ixel.s
 
 # target to generate assembly for a file
-src/pad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/pad.cpp.s
-.PHONY : src/pad.cpp.s
-
-src/sablonClass.obj: src/sablonClass.cpp.obj
-.PHONY : src/sablonClass.obj
-
-# target to build an object file
-src/sablonClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.obj
-.PHONY : src/sablonClass.cpp.obj
-
-src/sablonClass.i: src/sablonClass.cpp.i
-.PHONY : src/sablonClass.i
-
-# target to preprocess a source file
-src/sablonClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.i
-.PHONY : src/sablonClass.cpp.i
-
-src/sablonClass.s: src/sablonClass.cpp.s
-.PHONY : src/sablonClass.s
-
-# target to generate assembly for a file
-src/sablonClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/sablonClass.cpp.s
-.PHONY : src/sablonClass.cpp.s
-
-src/screamer.obj: src/screamer.cpp.obj
-.PHONY : src/screamer.obj
-
-# target to build an object file
-src/screamer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.obj
-.PHONY : src/screamer.cpp.obj
-
-src/screamer.i: src/screamer.cpp.i
-.PHONY : src/screamer.i
-
-# target to preprocess a source file
-src/screamer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.i
-.PHONY : src/screamer.cpp.i
-
-src/screamer.s: src/screamer.cpp.s
-.PHONY : src/screamer.s
-
-# target to generate assembly for a file
-src/screamer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/screamer.cpp.s
-.PHONY : src/screamer.cpp.s
-
-src/shader.obj: src/shader.cpp.obj
-.PHONY : src/shader.obj
-
-# target to build an object file
-src/shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.obj
-.PHONY : src/shader.cpp.obj
-
-src/shader.i: src/shader.cpp.i
-.PHONY : src/shader.i
-
-# target to preprocess a source file
-src/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.i
-.PHONY : src/shader.cpp.i
-
-src/shader.s: src/shader.cpp.s
-.PHONY : src/shader.s
-
-# target to generate assembly for a file
-src/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/shader.cpp.s
-.PHONY : src/shader.cpp.s
-
-src/sixam.obj: src/sixam.cpp.obj
-.PHONY : src/sixam.obj
-
-# target to build an object file
-src/sixam.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj
-.PHONY : src/sixam.cpp.obj
-
-src/sixam.i: src/sixam.cpp.i
-.PHONY : src/sixam.i
-
-# target to preprocess a source file
-src/sixam.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.i
-.PHONY : src/sixam.cpp.i
-
-src/sixam.s: src/sixam.cpp.s
-.PHONY : src/sixam.s
-
-# target to generate assembly for a file
-src/sixam.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.s
-.PHONY : src/sixam.cpp.s
+src/animatronics/Ixel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\JoculMeuRaylib.dir\build.make CMakeFiles/JoculMeuRaylib.dir/src/animatronics/Ixel.cpp.s
+.PHONY : src/animatronics/Ixel.cpp.s
 
 # Help Target
 help:
@@ -353,33 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... JoculMeuRaylib
-	@echo ... src/camera.obj
-	@echo ... src/camera.i
-	@echo ... src/camera.s
-	@echo ... src/gameplay.obj
-	@echo ... src/gameplay.i
-	@echo ... src/gameplay.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
-	@echo ... src/menu.obj
-	@echo ... src/menu.i
-	@echo ... src/menu.s
-	@echo ... src/pad.obj
-	@echo ... src/pad.i
-	@echo ... src/pad.s
-	@echo ... src/sablonClass.obj
-	@echo ... src/sablonClass.i
-	@echo ... src/sablonClass.s
-	@echo ... src/screamer.obj
-	@echo ... src/screamer.i
-	@echo ... src/screamer.s
-	@echo ... src/shader.obj
-	@echo ... src/shader.i
-	@echo ... src/shader.s
-	@echo ... src/sixam.obj
-	@echo ... src/sixam.i
-	@echo ... src/sixam.s
+	@echo ... src/animatronics/Anila.obj
+	@echo ... src/animatronics/Anila.i
+	@echo ... src/animatronics/Anila.s
+	@echo ... src/animatronics/Asad.obj
+	@echo ... src/animatronics/Asad.i
+	@echo ... src/animatronics/Asad.s
+	@echo ... src/animatronics/Ixel.obj
+	@echo ... src/animatronics/Ixel.i
+	@echo ... src/animatronics/Ixel.s
 .PHONY : help
 
 
