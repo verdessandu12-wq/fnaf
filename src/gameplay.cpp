@@ -13,7 +13,7 @@ void gameplay::import_variable(){
 }
 void gameplay::rendering(){
     origin = {0.0f, 0.0f};
-    texture_rect = {x, y, 1000.0f, 800.0f};
+    texture_rect = {x, y, 3000.0f, 2160.0f};
     dest = {0, 0, (float)GetScreenWidth(), (float)GetScreenHeight()};
     DrawTexturePro(office, texture_rect, dest,  origin, 0.0f,  WHITE);
 }
@@ -21,7 +21,7 @@ void gameplay::move_camera(){
     if (IsKeyDown(KEY_A) && x > 0){
         x -= 20;
     }                                                                                                          
-    if (IsKeyDown(KEY_D) && x < 1600 - 1000){
+    if (IsKeyDown(KEY_D) && x < 4300 - texture_rect.width){
         x += 20;
     }
 }

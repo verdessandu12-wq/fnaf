@@ -1,7 +1,6 @@
 CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj: \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\main.cpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\menu.hpp \
- C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\gameplay.hpp \
  C:/msys64/mingw64/include/raylib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
@@ -10,6 +9,7 @@ CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/_mingw_mac.h \
  C:/msys64/mingw64/include/_mingw_secapi.h \
  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+ C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\gameplay.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\camera.hpp \
  C:/msys64/mingw64/include/c++/15.2.0/vector \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \

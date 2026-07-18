@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 3. Colectăm toate fișierele .cpp din folderul src
 file(GLOB_RECURSE SOURCES "src/*.cpp")
-
+file(GLOB_RECURSE SOURCES "src/animatronics/*.cpp")
 # 4. Definim executabilul final (numele jocului și fișierele sursă)
 add_executable(${PROJECT_NAME} ${SOURCES})
 
