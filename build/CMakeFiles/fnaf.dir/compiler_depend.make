@@ -164,7 +164,8 @@ CMakeFiles/fnaf.dir/src/camera.cpp.obj: C:/Users/Admin/Desktop/Programing\ proje
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
-  C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/camera.hpp
+  C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/camera.hpp \
+  C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/gameplay.hpp
 
 CMakeFiles/fnaf.dir/src/gameplay.cpp.obj: C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/gameplay.cpp \
   C:/msys64/mingw64/include/_mingw.h \
@@ -730,9 +731,9 @@ C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/pad.hpp:
 
 C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/menu.hpp:
 
-C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/gameplay.hpp:
-
 C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/gameplay.cpp:
+
+C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/gameplay.hpp:
 
 C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/camera.hpp:
 

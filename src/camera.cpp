@@ -11,6 +11,7 @@ void camera::import_variable(){
     h = 720.0f;
     map = LoadTexture("../assets/map.png");
     posMap = {w / 2 + 100, h / 2 + 100};
+    //PlayMusicStream(game1.ambient);
     for (int i = 1; i < 11; i++){
         string cam = "../assets/camera/" + to_string(i) + "Camera.png";
         Texture2D camera = LoadTexture(cam.c_str());
@@ -46,6 +47,8 @@ void camera::import_variable(){
     }
 }
 void camera::switch_room(){
+    //UpdateMusicStream(game1.ambient);
+    //SetMusicVolume(game1.ambient, 0.5f);
     if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
         cout << GetMouseX() << " " << GetMouseY() << endl;
 

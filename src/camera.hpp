@@ -2,9 +2,11 @@
 #define CAMERA_HPP
 #include "raylib.h"
 #include <vector>
+#include "gameplay.hpp"
 using namespace std;
 class camera {
     public:
+    gameplay game1;
     float w, h;
     Shader shader;
     Texture2D map;

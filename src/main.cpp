@@ -25,16 +25,24 @@ int main() {
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
+    //CLASS OBJECTS
     gameplay game1;
     camera camera1;
     animPad pad;
     sixam sixamh;
+    //PlayMusicStream(game1.ambient);
+    //IMPORT VARIABLES
     game1.import_variable();
     camera1.import_variable();
     pad.importVariable(); 
     sixamh.importVariable();
+    //IMPORTANT VARIABLES
+    Music ambient = LoadMusicStream("../song/ambient.mp3");
+    PlayMusicStream(ambient);
     SetTargetFPS(60);
     while(!WindowShouldClose()){
+        UpdateMusicStream(ambient);
+        //UpdateMusicStream(game1.ambient);
         pad.logic();
         if(IsKeyPressed(KEY_ESCAPE)){
             break;
@@ -46,17 +54,19 @@ int main() {
             inCamera = !inCamera;
             pad.tap = true;
         }
-        if(inCamera && pad.num >= 3 && currentScen != scen::sixam){
+        if(inCamera && pad.num >= 3 && currentScen != scen::sixam && currentScen != scen::menu){
             currentScen = scen::camera;
         }
-        if(!inCamera && currentScen != scen::sixam){
+        if(!inCamera && currentScen != scen::sixam && currentScen != scen::menu){
             currentScen = scen::gameplay;
         }
         if (currentScen == scen::gameplay){
         game1.move_camera();
+        SetMusicVolume(ambient, 1.0f);
         }
         if (currentScen == scen::camera){
         camera1.switch_room();
+        SetMusicVolume(ambient, 0.5f);
         }
         if (currentScen == scen::sixam){
         sixamh.logic();

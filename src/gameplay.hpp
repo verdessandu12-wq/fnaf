@@ -6,7 +6,6 @@ class gameplay {
     Texture2D office;
     float x, y, cameraX;
     Vector2 origin;
-    Music ambient;
     Rectangle texture_rect, dest;
     void import_variable();
     void rendering();
