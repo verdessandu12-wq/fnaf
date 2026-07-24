@@ -19,7 +19,7 @@ enum class scen{
 };
 
 int main() {
-    scen currentScen = scen::gameplay;
+    scen currentScen = scen::menu;
     float w = 1280, h = 720;
     bool inCamera = false;
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
@@ -30,36 +30,54 @@ int main() {
     camera camera1;
     animPad pad;
     sixam sixamh;
+    menu menu1;
     //PlayMusicStream(game1.ambient);
     //IMPORT VARIABLES
     game1.import_variable();
     camera1.import_variable();
     pad.importVariable(); 
     sixamh.importVariable();
+    menu1.import_variable();
     //IMPORTANT VARIABLES
+    menu1.renderMusic();
     Music ambient = LoadMusicStream("../song/ambient.mp3");
     PlayMusicStream(ambient);
     SetTargetFPS(60);
     while(!WindowShouldClose()){
-        UpdateMusicStream(ambient);
         //UpdateMusicStream(game1.ambient);
         pad.logic();
+        
+        if(currentScen == scen::menu) {
+            menu1.UpdateMusic();
+            if(CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt)) {
+                if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                    currentScen = scen::gameplay;
+                }
+            }
+        }
+
         if(IsKeyPressed(KEY_ESCAPE)){
             break;
         }
-        if(IsKeyPressed(KEY_C)){
-            currentScen = scen::sixam;
-        }
-        if(IsKeyPressed(KEY_SPACE) && !pad.tap){
-            inCamera = !inCamera;
-            pad.tap = true;
-        }
-        if(inCamera && pad.num >= 3 && currentScen != scen::sixam && currentScen != scen::menu){
-            currentScen = scen::camera;
-        }
-        if(!inCamera && currentScen != scen::sixam && currentScen != scen::menu){
+
+        if (currentScen != scen::menu) {
+            UpdateMusicStream(ambient);
+
+            if(IsKeyPressed(KEY_C)){
+                currentScen = scen::sixam;
+            }
+            if(IsKeyPressed(KEY_SPACE) && !pad.tap){
+                inCamera = !inCamera;
+                pad.tap = true;
+            }
+            if(inCamera && pad.num >= 3 && currentScen != scen::sixam && currentScen != scen::menu){
+                currentScen = scen::camera;
+            }
+            if(!inCamera && currentScen != scen::sixam && currentScen != scen::menu){
             currentScen = scen::gameplay;
+            }
         }
+        
         if (currentScen == scen::gameplay){
         game1.move_camera();
         SetMusicVolume(ambient, 1.0f);
@@ -76,6 +94,11 @@ int main() {
         }
     BeginDrawing();
             ClearBackground({0, 0, 0, 255});
+
+            if (currentScen == scen::menu){
+                menu1.rendering();
+            }
+
             if (currentScen == scen::gameplay){
                 game1.rendering();
             }
@@ -94,6 +117,7 @@ int main() {
     for(int i = 0; i < 46; i++){
     UnloadTexture(sixamh.sixamobj[i].texture);
     }
+    menu1.unload();
     CloseAudioDevice();
     CloseWindow();
     return 0;
