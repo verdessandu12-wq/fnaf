@@ -14,7 +14,7 @@ void camera::import_variable(){
     for (int i = 1; i < 11; i++){
         string cam = "../assets/camera/" + to_string(i) + "Camera.png";
         Texture2D camera = LoadTexture(cam.c_str());
-        Rectangle sourecTemp = {0.0f, 0.0f, 1280.0f, 720.0f};
+        Rectangle sourecTemp = {0.0f, 0.0f, (float)camera.width, (float)camera.height};
         Rectangle destTemp = {0.0f, 0.0f, (float)w, (float)h};
         room.push_back(camera);
         source.push_back(sourecTemp);

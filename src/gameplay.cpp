@@ -7,12 +7,15 @@ void gameplay::import_variable(){
     y = 0.0f;
     cameraX = 0.0f;
     office = LoadTexture("../assets/office.jpg");
+    ambient = LoadMusicStream("../song/ambient.mp3");
+    PlayMusicStream(ambient);
 }
 void gameplay::rendering(){
     origin = {0.0f, 0.0f};
     texture_rect = {x, y, 3000.0f, 2160.0f};
     dest = {0, 0, (float)GetScreenWidth(), (float)GetScreenHeight()};
     DrawTexturePro(office, texture_rect, dest,  origin, 0.0f,  WHITE);
+    UpdateMusicStream(ambient);
     
 }
 void gameplay::move_camera(){
