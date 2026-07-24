@@ -1,22 +1,18 @@
 cmake_minimum_required(VERSION 3.10)
+project(fnaf)
 
-# Numele proiectului tău
-project(JoculMeuRaylib CXX)
-
-# Setăm standardul C++ (de exemplu C++17 sau C++20)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 3. Colectăm toate fișierele .cpp din folderul src
-file(GLOB_RECURSE SOURCES "src/*.cpp")
-file(GLOB_RECURSE SOURCES "src/animatronics/*.cpp")
-# 4. Definim executabilul final (numele jocului și fișierele sursă)
+# Colectăm toate fișierele C++
+file(GLOB_RECURSE SOURCES "src/*.cpp" "src/animatronics/*.cpp")
+
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-# 5. Linkăm Raylib și librăriile de sistem necesare pentru Windows
+# Forțăm linkerul de Windows/MinGW să folosească main() standard
 if(WIN32)
     target_link_libraries(${PROJECT_NAME} raylib opengl32 gdi32 winmm)
+    target_link_options(${PROJECT_NAME} PRIVATE -mconsole -Wl,-subsystem,console)
 else()
-    # Pentru colegii care poate folosesc Linux/Mac în viitor
     target_link_libraries(${PROJECT_NAME} raylib)
 endif()

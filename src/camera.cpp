@@ -12,13 +12,13 @@ void camera::import_variable(){
     map = LoadTexture("../assets/map.png");
     posMap = {w / 2 + 100, h / 2 + 100};
     for (int i = 1; i < 11; i++){
-        /*string cam = "../assets/" + to_string(i) + "Camera.png";
+        string cam = "../assets/camera/" + to_string(i) + "Camera.png";
         Texture2D camera = LoadTexture(cam.c_str());
-        Rectangle sourecTemp = {0.0f, 0.0f, (float)camera.width, (float)camera.width};
+        Rectangle sourecTemp = {0.0f, 0.0f, 1280.0f, 720.0f};
         Rectangle destTemp = {0.0f, 0.0f, (float)w, (float)h};
         room.push_back(camera);
         source.push_back(sourecTemp);
-        dest.push_back(destTemp);*/
+        dest.push_back(destTemp);
     }
     //1
     button.push_back({926, 460, 60, 19});
@@ -40,6 +40,10 @@ void camera::import_variable(){
     button.push_back({971, 561, 63, 33});
     //10
     button.push_back({963, 492, 67, 31});
+    shader = LoadShader(0, "../shader/first_shader.fs");
+    if (!IsShaderValid(shader)){
+        TraceLog(LOG_ERROR, "Critical invalid");
+    }
 }
 void camera::switch_room(){
     if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
@@ -58,6 +62,8 @@ void camera::switch_room(){
 
 }
 void camera::rendering(){
+    BeginShaderMode(shader);
+    DrawTexturePro(room[current_room], source[current_room], dest[current_room], {0.0f, 0.0f}, 0.0f, WHITE);
+    EndShaderMode();
     DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
-    //DrawTexturePro(room[current_room], source[current_room], dest[current_room], {0.0f, 0.0f}, 0.0f, WHITE);
 }

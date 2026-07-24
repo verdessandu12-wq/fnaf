@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/CMakeLists.txt"
+  "CMakeFiles/4.1.0/CMakeCCompiler.cmake"
   "CMakeFiles/4.1.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.0/CMakeRCCompiler.cmake"
   "CMakeFiles/4.1.0/CMakeSystem.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/CMakeCXXInformation.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake"
@@ -20,15 +22,21 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Linker/GNU-CXX.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake"
+  "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake"
@@ -51,5 +59,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/JoculMeuRaylib.dir/DependInfo.cmake"
+  "CMakeFiles/fnaf.dir/DependInfo.cmake"
   )

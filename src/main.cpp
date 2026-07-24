@@ -18,7 +18,7 @@ enum class scen{
     pad
 };
 
-int main(int argc, char *argv[]){
+int main() {
     scen currentScen = scen::gameplay;
     float w = 1280, h = 720;
     bool inCamera = false;

@@ -1,4 +1,4 @@
-CMakeFiles/JoculMeuRaylib.dir/src/sixam.cpp.obj: \
+CMakeFiles/fnaf.dir/src/sixam.cpp.obj: \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\sixam.cpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\sixam.hpp \
  C:/msys64/mingw64/include/raylib.h \

@@ -1,4 +1,4 @@
-CMakeFiles/JoculMeuRaylib.dir/src/main.cpp.obj: \
+CMakeFiles/fnaf.dir/src/main.cpp.obj: \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\main.cpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\menu.hpp \
  C:/msys64/mingw64/include/raylib.h \

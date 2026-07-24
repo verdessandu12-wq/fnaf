@@ -6,6 +6,7 @@ using namespace std;
 class camera {
     public:
     float w, h;
+    Shader shader;
     Texture2D map;
     Vector2 posMap;
     vector<Texture2D> room;
