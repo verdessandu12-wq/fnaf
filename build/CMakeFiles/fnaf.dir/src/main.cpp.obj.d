@@ -67,8 +67,8 @@ CMakeFiles/fnaf.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
- C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\sixam.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\sablonClass.hpp \
+ C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\sixam.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\screamer.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\pad.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\shader.hpp \

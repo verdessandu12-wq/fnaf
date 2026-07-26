@@ -10,6 +10,9 @@ class gameplay {
     void import_variable();
     void rendering();
     void move_camera();
+    ~gameplay(){
+        UnloadTexture(office);
+    }
 
 };
 #endif
