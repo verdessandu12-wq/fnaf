@@ -97,6 +97,9 @@ int main() {
 
             if (currentScen == scen::menu){
                 menu1.rendering();
+                if (CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt)) {
+                    menu1.renderArrow();
+                }
             }
 
             if (currentScen == scen::gameplay){
