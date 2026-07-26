@@ -14,12 +14,11 @@ void camera::import_variable(){
     //PlayMusicStream(game1.ambient);
     for (int i = 1; i < 11; i++){
         string cam = "../assets/camera/" + to_string(i) + "Camera.png";
-        Texture2D camera = LoadTexture(cam.c_str());
-        Rectangle sourecTemp = {0.0f, 0.0f, (float)camera.width, (float)camera.height};
+        Texture2D cameraTemp = LoadTexture(cam.c_str());
+        Rectangle sourceTemp = {0.0f, 0.0f, (float)cameraTemp.width, (float)cameraTemp.height};
         Rectangle destTemp = {0.0f, 0.0f, (float)w, (float)h};
-        room.push_back(camera);
-        source.push_back(sourecTemp);
-        dest.push_back(destTemp);
+        Vector2 originTemp = {0.0f, 0.0f};
+        camera.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, WHITE);
     }
     //1
     button.push_back({926, 460, 60, 19});
@@ -66,7 +65,8 @@ void camera::switch_room(){
 }
 void camera::rendering(){
     BeginShaderMode(shader);
-    DrawTexturePro(room[current_room], source[current_room], dest[current_room], {0.0f, 0.0f}, 0.0f, WHITE);
+    DrawTexturePro(camera[current_room].texture, camera[current_room].source, camera[current_room].dest, camera[current_room].origin, camera[current_room].angle, camera[current_room].col);
     EndShaderMode();
     DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
+    DrawRectangleRec(button[current_room], WHITE);
 }

@@ -4,8 +4,7 @@
 class menu {
     public:
         float width, height;
-        Texture2D background;
-        Texture2D button;
+        Texture2D background, button;
         Rectangle Play_Butt;
         Music backMusic;
         void import_variable();
@@ -14,5 +13,9 @@ class menu {
         bool logic();
         void UpdateMusic();
         void unload();
+        ~menu(){
+            UnloadTexture(background);
+            UnloadTexture(button);
+        }
 };
 #endif
