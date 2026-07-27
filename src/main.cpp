@@ -17,6 +17,16 @@ enum class scen{
     sixam,
     pad
 };
+class shaderVig{
+    public:
+    void importVariable(Shader vignette){
+        
+    }
+    void setLocation(Shader vignette){
+        
+    }
+
+};
 
 int main() {
     scen currentScen = scen::menu;
@@ -25,12 +35,17 @@ int main() {
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
+    Shader vignette = LoadShader(0, "../shader/vignete.fs");
+    if (vignette.id == 0) {
+    std::cout << "ERROR: Shader-ul NU s-a incarcat! Verifica calea catre fisier!\n";
+}
     //CLASS OBJECTS
     gameplay game1;
     camera camera1;
     animPad pad;
     sixam sixamh;
     menu menu1;
+    shaderVig shader1;
     //PlayMusicStream(game1.ambient);
     //IMPORT VARIABLES
     game1.import_variable();
@@ -38,27 +53,62 @@ int main() {
     pad.importVariable(); 
     sixamh.importVariable();
     menu1.import_variable();
+    shader1.importVariable(vignette);
     //IMPORTANT VARIABLES
     menu1.renderMusic();
     Music ambient = LoadMusicStream("../song/ambient.mp3");
     PlayMusicStream(ambient);
+    shader1.setLocation(vignette);  
+
+
+    ///////
+        float radius = 0.5f;
+    int radiusLoc, softnessLoc;
+    float softness = 0.3f;
+    radiusLoc = GetShaderLocation(vignette, "radius");
+        softnessLoc = GetShaderLocation(vignette, "softness");
+    SetShaderValue(vignette, radiusLoc, &radius, SHADER_UNIFORM_FLOAT);
+        SetShaderValue(vignette, softnessLoc, &softness, SHADER_UNIFORM_FLOAT);
+        // 1. Obține locația variabilei uniform din shader
+int renderSizeLoc = GetShaderLocation(vignette, "renderSize");
+
+// 2. Definește rezoluția
+Vector2 renderSize = { (float)GetScreenWidth(), (float)GetScreenHeight() };
+
+// 3. Trimite valoarea către shader (fă asta în Init sau înainte de drawing)
+SetShaderValue(vignette, renderSizeLoc, &renderSize, SHADER_UNIFORM_VEC2);
+    //////
+
+
     SetTargetFPS(60);
     while(!WindowShouldClose()){
         //UpdateMusicStream(game1.ambient);
         pad.logic();
-        
-        if(currentScen == scen::menu) {
+
+        static bool isHovered = false; 
+
+        if (currentScen == scen::menu) {
             menu1.UpdateMusic();
-            if(CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt)) {
-                if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+
+            bool collision = CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt);
+
+            if (collision) {
+                if (isHovered == false) {
+                    menu1.clickSound();
+                    isHovered = true;
+                }
+
+                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
                     currentScen = scen::gameplay;
                 }
+            } else {
+                isHovered = false; 
             }
         }
 
         if(IsKeyPressed(KEY_ESCAPE)){
             break;
-        }
+        } 
 
         if (currentScen != scen::menu) {
             UpdateMusicStream(ambient);
@@ -94,7 +144,7 @@ int main() {
         }
     BeginDrawing();
             ClearBackground({0, 0, 0, 255});
-
+            
             if (currentScen == scen::menu){
                 menu1.rendering();
                 if (CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt)) {
@@ -114,6 +164,9 @@ int main() {
             if (currentScen == scen::sixam){
                 sixamh.rendering();
             }
+            BeginShaderMode(vignette);
+                DrawRectangle(0, 0, w, h, WHITE);
+            EndShaderMode();
     EndDrawing();
     }
     //cout << game1.fx << "\n" << game1.fy << "\n" << game1.wf << "\n" << game1.hf;

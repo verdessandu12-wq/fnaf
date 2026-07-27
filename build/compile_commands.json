@@ -1,74 +1,56 @@
 [
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\animatronics\\Anila.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\animatronics\\Anila.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/animatronics/Anila.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/animatronics/Anila.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\camera.cpp.obj -c C:\\code\\fnaf\\src\\camera.cpp",
+  "file": "C:/code/fnaf/src/camera.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/camera.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\animatronics\\Asad.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\animatronics\\Asad.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/animatronics/Asad.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/animatronics/Asad.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\gameplay.cpp.obj -c C:\\code\\fnaf\\src\\gameplay.cpp",
+  "file": "C:/code/fnaf/src/gameplay.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/gameplay.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\animatronics\\Ixel.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\animatronics\\Ixel.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/animatronics/Ixel.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/animatronics/Ixel.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\main.cpp.obj -c C:\\code\\fnaf\\src\\main.cpp",
+  "file": "C:/code/fnaf/src/main.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\camera.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\camera.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/camera.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/camera.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\menu.cpp.obj -c C:\\code\\fnaf\\src\\menu.cpp",
+  "file": "C:/code/fnaf/src/menu.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/menu.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\gameplay.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\gameplay.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/gameplay.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/gameplay.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\pad.cpp.obj -c C:\\code\\fnaf\\src\\pad.cpp",
+  "file": "C:/code/fnaf/src/pad.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/pad.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\main.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\main.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/main.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/main.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\sablonClass.cpp.obj -c C:\\code\\fnaf\\src\\sablonClass.cpp",
+  "file": "C:/code/fnaf/src/sablonClass.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/sablonClass.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\menu.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\menu.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/menu.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/menu.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\screamer.cpp.obj -c C:\\code\\fnaf\\src\\screamer.cpp",
+  "file": "C:/code/fnaf/src/screamer.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/screamer.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\pad.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\pad.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/pad.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/pad.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\shader.cpp.obj -c C:\\code\\fnaf\\src\\shader.cpp",
+  "file": "C:/code/fnaf/src/shader.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/shader.cpp.obj"
 },
 {
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\sablonClass.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\sablonClass.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/sablonClass.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/sablonClass.cpp.obj"
-},
-{
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\screamer.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\screamer.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/screamer.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/screamer.cpp.obj"
-},
-{
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\shader.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\shader.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/shader.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/shader.cpp.obj"
-},
-{
-  "directory": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\fnaf.dir\\src\\sixam.cpp.obj -c \"C:\\Users\\Admin\\Desktop\\Programing project\\fnaf\\fnaf\\src\\sixam.cpp\"",
-  "file": "C:/Users/Admin/Desktop/Programing project/fnaf/fnaf/src/sixam.cpp",
-  "output": "CMakeFiles/fnaf.dir/src/sixam.cpp.obj"
+  "directory": "C:/code/fnaf/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=gnu++17 -IC:/msys64/ucrt64/bin/../include -o CMakeFiles\\RaylibGame.dir\\src\\sixam.cpp.obj -c C:\\code\\fnaf\\src\\sixam.cpp",
+  "file": "C:/code/fnaf/src/sixam.cpp",
+  "output": "CMakeFiles/RaylibGame.dir/src/sixam.cpp.obj"
 }
 ]

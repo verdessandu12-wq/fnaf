@@ -19,6 +19,8 @@
 # Visual Studio Code (Configurații de proiect)
 # ====================================================================
 .vscode/
+build/
+CMakeLists.txt
 
 # ====================================================================
 # Sistemul de operare și altele

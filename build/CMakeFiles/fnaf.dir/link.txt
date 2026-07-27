@@ -1,3 +1,0 @@
-C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\fnaf.dir/objects.a
-C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\fnaf.dir/objects.a @CMakeFiles\fnaf.dir\objects1.rsp
-C:\msys64\mingw64\bin\g++.exe -g -mconsole -Wl,-subsystem,console -Wl,--whole-archive CMakeFiles\fnaf.dir/objects.a -Wl,--no-whole-archive -o fnaf.exe -Wl,--out-implib,libfnaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fnaf.dir\linkLibs.rsp
