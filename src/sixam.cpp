@@ -7,7 +7,7 @@
 void sixam::importVariable(){
          w = 1280;
         h = 720;
-    for (int i = 1; i < 47; i++){
+    /*for (int i = 1; i < 47; i++){
         std::cout << i << "\t";
         std::string temp = "../assets/sixam/sixam" + std::to_string(i) + ".jpg";
         Texture2D tempTexture = LoadTexture(temp.c_str());
@@ -17,7 +17,7 @@ void sixam::importVariable(){
         float tempAngle = 0.0f;
         Color tempCol = WHITE;
         sixamobj.emplace_back(tempTexture, tempSource, tempDest, tempOrigin, 0.0f, tempCol);
-    }
+    }*/
     end = LoadMusicStream("../song/sixam.mp3");
     numberi = 0;
     PlayMusicStream(end);
