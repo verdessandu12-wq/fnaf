@@ -1,7 +1,7 @@
 #include "gameplay.hpp"
 #include "raylib.h"
-
 using namespace std;
+
 void gameplay::import_variable(){
     x = 400.0f;
     y = 0.0f;

@@ -4,7 +4,7 @@ void menu::import_variable() {
     width = 1280.0f;
     height = 720.0f;
     background = LoadTexture("../assets/menu/Menu-fnaf.jpg");
-    Play_Butt = {60, 300, 203, 33};
+    Play_Butt = {125, 350, 203, 33};
     button = LoadTexture("../assets/menu/fnaf_playButt.png");
     backMusic = LoadMusicStream("../song/fnaf_back_music.mp3");
 }
@@ -18,12 +18,11 @@ bool menu::logic() {
     else {
         return false;
     }
-    return false;
 }
 
 void menu::rendering() {
     DrawTexture(background, 0, 0, WHITE);
-    DrawTexture(button, 60, 300, WHITE);
+    DrawTexture(button, 125, 350, WHITE);
     DrawRectangleRec(Play_Butt, BLANK);
 }
 
@@ -31,8 +30,18 @@ void menu::renderMusic() {
     PlayMusicStream(backMusic);
 }
 
+void menu::clickSound() {
+    PlaySound(click);
+}
+
+void menu::renderArrow() {
+    DrawTexture(arrow, 75, 350, WHITE);
+}
+
 void menu::UpdateMusic() {
+    SetMusicVolume(backMusic, 0.1f);
     UpdateMusicStream(backMusic);
+    
 }
 
 void menu::unload() {
