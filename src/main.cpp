@@ -19,13 +19,15 @@ enum class scen{
 };
 
 int main() {
-    scen currentScen = scen::menu;
+    scen currentScen = scen::gameplay;
     float w = 1280, h = 720;
     bool inCamera = false;
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
+
     Shader vignette = LoadShader(0, "../shader/vignete.fs");
+
     //CLASS OBJECTS
     gameplay game1;
     camera camera1;
@@ -33,17 +35,19 @@ int main() {
     sixam sixamh;
     menu menu1;
     //PlayMusicStream(game1.ambient);
+
     //IMPORT VARIABLES
     game1.import_variable();
     camera1.import_variable();
-    pad.importVariable(); 
-    sixamh.importVariable();
+    pad.importVariable();
+    sixamh.importVariable();   
     menu1.import_variable();
+
     //IMPORTANT VARIABLES
     menu1.renderMusic();
     Music ambient = LoadMusicStream("../song/ambient.mp3");
-    PlayMusicStream(ambient); 
 
+    PlayMusicStream(ambient);
 
     SetTargetFPS(60);
     while(!WindowShouldClose()){

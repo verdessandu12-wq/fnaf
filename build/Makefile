@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named RaylibGame
+# Target rules for targets named fnaf
 
 # Build rule for target.
-RaylibGame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RaylibGame
-.PHONY : RaylibGame
+fnaf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 fnaf
+.PHONY : fnaf
 
 # fast build rule for target.
-RaylibGame/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/build
-.PHONY : RaylibGame/fast
+fnaf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/build
+.PHONY : fnaf/fast
 
 src/camera.obj: src/camera.cpp.obj
 .PHONY : src/camera.obj
 
 # target to build an object file
 src/camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/camera.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/camera.cpp.obj
 .PHONY : src/camera.cpp.obj
 
 src/camera.i: src/camera.cpp.i
@@ -141,7 +141,7 @@ src/camera.i: src/camera.cpp.i
 
 # target to preprocess a source file
 src/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/camera.cpp.i
 .PHONY : src/camera.cpp.i
 
 src/camera.s: src/camera.cpp.s
@@ -149,7 +149,7 @@ src/camera.s: src/camera.cpp.s
 
 # target to generate assembly for a file
 src/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
 src/gameplay.obj: src/gameplay.cpp.obj
@@ -157,7 +157,7 @@ src/gameplay.obj: src/gameplay.cpp.obj
 
 # target to build an object file
 src/gameplay.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/gameplay.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/gameplay.cpp.obj
 .PHONY : src/gameplay.cpp.obj
 
 src/gameplay.i: src/gameplay.cpp.i
@@ -165,7 +165,7 @@ src/gameplay.i: src/gameplay.cpp.i
 
 # target to preprocess a source file
 src/gameplay.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/gameplay.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/gameplay.cpp.i
 .PHONY : src/gameplay.cpp.i
 
 src/gameplay.s: src/gameplay.cpp.s
@@ -173,7 +173,7 @@ src/gameplay.s: src/gameplay.cpp.s
 
 # target to generate assembly for a file
 src/gameplay.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/gameplay.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/gameplay.cpp.s
 .PHONY : src/gameplay.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -181,7 +181,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -189,7 +189,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -197,7 +197,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/menu.obj: src/menu.cpp.obj
@@ -205,7 +205,7 @@ src/menu.obj: src/menu.cpp.obj
 
 # target to build an object file
 src/menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/menu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/menu.cpp.obj
 .PHONY : src/menu.cpp.obj
 
 src/menu.i: src/menu.cpp.i
@@ -213,7 +213,7 @@ src/menu.i: src/menu.cpp.i
 
 # target to preprocess a source file
 src/menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/menu.cpp.i
 .PHONY : src/menu.cpp.i
 
 src/menu.s: src/menu.cpp.s
@@ -221,7 +221,7 @@ src/menu.s: src/menu.cpp.s
 
 # target to generate assembly for a file
 src/menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/menu.cpp.s
 .PHONY : src/menu.cpp.s
 
 src/pad.obj: src/pad.cpp.obj
@@ -229,7 +229,7 @@ src/pad.obj: src/pad.cpp.obj
 
 # target to build an object file
 src/pad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/pad.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/pad.cpp.obj
 .PHONY : src/pad.cpp.obj
 
 src/pad.i: src/pad.cpp.i
@@ -237,7 +237,7 @@ src/pad.i: src/pad.cpp.i
 
 # target to preprocess a source file
 src/pad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/pad.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/pad.cpp.i
 .PHONY : src/pad.cpp.i
 
 src/pad.s: src/pad.cpp.s
@@ -245,7 +245,7 @@ src/pad.s: src/pad.cpp.s
 
 # target to generate assembly for a file
 src/pad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/pad.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/pad.cpp.s
 .PHONY : src/pad.cpp.s
 
 src/sablonClass.obj: src/sablonClass.cpp.obj
@@ -253,7 +253,7 @@ src/sablonClass.obj: src/sablonClass.cpp.obj
 
 # target to build an object file
 src/sablonClass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/sablonClass.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/sablonClass.cpp.obj
 .PHONY : src/sablonClass.cpp.obj
 
 src/sablonClass.i: src/sablonClass.cpp.i
@@ -261,7 +261,7 @@ src/sablonClass.i: src/sablonClass.cpp.i
 
 # target to preprocess a source file
 src/sablonClass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/sablonClass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/sablonClass.cpp.i
 .PHONY : src/sablonClass.cpp.i
 
 src/sablonClass.s: src/sablonClass.cpp.s
@@ -269,7 +269,7 @@ src/sablonClass.s: src/sablonClass.cpp.s
 
 # target to generate assembly for a file
 src/sablonClass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/sablonClass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/sablonClass.cpp.s
 .PHONY : src/sablonClass.cpp.s
 
 src/screamer.obj: src/screamer.cpp.obj
@@ -277,7 +277,7 @@ src/screamer.obj: src/screamer.cpp.obj
 
 # target to build an object file
 src/screamer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/screamer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/screamer.cpp.obj
 .PHONY : src/screamer.cpp.obj
 
 src/screamer.i: src/screamer.cpp.i
@@ -285,7 +285,7 @@ src/screamer.i: src/screamer.cpp.i
 
 # target to preprocess a source file
 src/screamer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/screamer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/screamer.cpp.i
 .PHONY : src/screamer.cpp.i
 
 src/screamer.s: src/screamer.cpp.s
@@ -293,7 +293,7 @@ src/screamer.s: src/screamer.cpp.s
 
 # target to generate assembly for a file
 src/screamer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/screamer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/screamer.cpp.s
 .PHONY : src/screamer.cpp.s
 
 src/shader.obj: src/shader.cpp.obj
@@ -301,7 +301,7 @@ src/shader.obj: src/shader.cpp.obj
 
 # target to build an object file
 src/shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/shader.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/shader.cpp.obj
 .PHONY : src/shader.cpp.obj
 
 src/shader.i: src/shader.cpp.i
@@ -309,7 +309,7 @@ src/shader.i: src/shader.cpp.i
 
 # target to preprocess a source file
 src/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/shader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/shader.cpp.i
 .PHONY : src/shader.cpp.i
 
 src/shader.s: src/shader.cpp.s
@@ -317,7 +317,7 @@ src/shader.s: src/shader.cpp.s
 
 # target to generate assembly for a file
 src/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/shader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
 src/sixam.obj: src/sixam.cpp.obj
@@ -325,7 +325,7 @@ src/sixam.obj: src/sixam.cpp.obj
 
 # target to build an object file
 src/sixam.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/sixam.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/sixam.cpp.obj
 .PHONY : src/sixam.cpp.obj
 
 src/sixam.i: src/sixam.cpp.i
@@ -333,7 +333,7 @@ src/sixam.i: src/sixam.cpp.i
 
 # target to preprocess a source file
 src/sixam.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/sixam.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/sixam.cpp.i
 .PHONY : src/sixam.cpp.i
 
 src/sixam.s: src/sixam.cpp.s
@@ -341,7 +341,7 @@ src/sixam.s: src/sixam.cpp.s
 
 # target to generate assembly for a file
 src/sixam.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\RaylibGame.dir\build.make CMakeFiles/RaylibGame.dir/src/sixam.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/sixam.cpp.s
 .PHONY : src/sixam.cpp.s
 
 # Help Target
@@ -352,7 +352,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... RaylibGame
+	@echo ... fnaf
 	@echo ... src/camera.obj
 	@echo ... src/camera.i
 	@echo ... src/camera.s

@@ -1,3 +1,3 @@
-C:/code/fnaf/build/CMakeFiles/RaylibGame.dir
+C:/code/fnaf/build/CMakeFiles/fnaf.dir
 C:/code/fnaf/build/CMakeFiles/edit_cache.dir
 C:/code/fnaf/build/CMakeFiles/rebuild_cache.dir
