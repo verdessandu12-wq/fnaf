@@ -18,6 +18,7 @@ bool menu::logic() {
     else {
         return false;
     }
+    return false;
 }
 
 void menu::rendering() {
