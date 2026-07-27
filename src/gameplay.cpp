@@ -11,7 +11,7 @@ void gameplay::import_variable(){
 }
 void gameplay::rendering(){
     origin = {0.0f, 0.0f};
-    texture_rect = {x, y, 3000.0f, 2160.0f};
+    texture_rect = {x, y, 3500.0f, 2160.0f};
     dest = {0, 0, (float)GetScreenWidth(), (float)GetScreenHeight()};
     DrawTexturePro(office, texture_rect, dest,  origin, 0.0f,  WHITE);
     //SetMusicVolume(ambient, 1.0f);
