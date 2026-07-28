@@ -1,0 +1,5 @@
+# git checkout --ours build/
+# git add .
+# git commit -m "Fix merge conflict in build files"
+# git push
+//FIX MERGED CONFLICT
