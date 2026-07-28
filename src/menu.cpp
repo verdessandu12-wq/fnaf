@@ -6,7 +6,10 @@ void menu::import_variable() {
     background = LoadTexture("../assets/menu/Menu-fnaf.jpg");
     Play_Butt = {125, 350, 203, 33};
     button = LoadTexture("../assets/menu/fnaf_playButt.png");
-    backMusic = LoadMusicStream("../song/fnaf_back_music.mp3");
+    backMusic = LoadMusicStream("../song/2017-youtube-background-music-low-quality.mp3");
+    arrow = LoadTexture("../assets/menu/arrow.png");
+    click = LoadSound("../song/button_off.mp3");
+
 }
 
 bool menu::logic() {
