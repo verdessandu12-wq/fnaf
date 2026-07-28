@@ -72,6 +72,10 @@ CMakeFiles/fnaf.dir/src/main.cpp.obj: \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\screamer.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\pad.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\shader.hpp \
+ C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\animatronics/Ixel.hpp \
+ C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\animatronics/animatronics.hpp \
+ C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/sablonClass.hpp \
+ C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/camera.hpp \
  C:/msys64/mingw64/include/c++/15.2.0/iostream \
  C:/msys64/mingw64/include/c++/15.2.0/ostream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \

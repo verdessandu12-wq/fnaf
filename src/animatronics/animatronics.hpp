@@ -11,9 +11,9 @@ class animatronics{
     int current_room_animatronic, random_room;
     float timer, nightCoef;
     vector<imgClass> animatronic;
-    virtual void importVariable();
-    virtual void rendering();
-    virtual void logic();
+    virtual void importVariable() = 0;
+    virtual void rendering(int current_room) = 0;
+    virtual void logic() = 0;
     ~animatronics(){
         for(int i = 0; i < animatronic.size(); i++){
             UnloadTexture(animatronic[i].texture);

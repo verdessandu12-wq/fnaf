@@ -11,7 +11,7 @@ class camera {
     float w, h;
     Shader shader;
     vector<imgClass> camera;
-    vector<Rectangle> button;
+    vector<Rectangle> button; 
     Texture2D map;
     Vector2 posMap;
     int current_room;

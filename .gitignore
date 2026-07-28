@@ -19,7 +19,7 @@
 # Visual Studio Code (Configurații de proiect)
 # ====================================================================
 .vscode/
-build/
+build
 # CMakeLists.txt
 .VSCodeCounter
 

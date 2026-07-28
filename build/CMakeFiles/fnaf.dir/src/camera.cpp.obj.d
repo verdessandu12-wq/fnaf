@@ -67,6 +67,10 @@ CMakeFiles/fnaf.dir/src/camera.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/tuple \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\gameplay.hpp \
  C:\Users\Admin\Desktop\Programing\ project\fnaf\fnaf\src\sablonClass.hpp \
+ C:/Users/Admin/Desktop/PROGRA~1/fnaf/fnaf/src/ANIMAT~1/Ixel.hpp \
+ C:/Users/Admin/Desktop/PROGRA~1/fnaf/fnaf/src/ANIMAT~1/animatronics.hpp \
+ C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/sablonClass.hpp \
+ C:/Users/Admin/Desktop/Programing\ project/fnaf/fnaf/src/camera.hpp \
  C:/msys64/mingw64/include/c++/15.2.0/string \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \

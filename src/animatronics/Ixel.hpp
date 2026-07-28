@@ -5,10 +5,13 @@
 #include "../camera.hpp"
 class Ixel : public animatronics {
     public:
-    camera camera1;
-    void importVariable() override;
-    void rendering() override;
-    void logic() override;
+    float w, h;
+    camera &camera1;
+    Shader shader;
+    Ixel(camera &cam) : camera1(cam){}
+    void importVariable()override;
+    void rendering(int current_room)override;
+    void logic()override;
 };
 
 #endif

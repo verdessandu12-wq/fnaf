@@ -10,7 +10,7 @@ using namespace std;
 void animPad::importVariable(){
     w = 1280;
     h = 720;
-    for(int i = 1; i < 5; i++){
+    for(int i = 1; i < 10; i++){
         string path = "../assets/pad/pad" + to_string(i) + ".png";
         Texture2D temp = LoadTexture(path.c_str());
         Rectangle tempDest = {0, 0, w, h};

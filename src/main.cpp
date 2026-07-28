@@ -23,7 +23,7 @@ int main() {
     scen currentScen = scen::menu;
     float w = 1280, h = 720;
     bool inCamera = false;
-    SetConfigFlags(FLAG_FULLSCREEN_MODE);
+    //SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
 
@@ -37,7 +37,7 @@ int main() {
     menu menu1;
 
     //CLASS ANIMATRONICS OBJECTS
-    Ixel ixel1;
+    Ixel ixel1(camera1);
     //PlayMusicStream(game1.ambient);
 
     //IMPORT VARIABLES
@@ -58,12 +58,12 @@ int main() {
     while(!WindowShouldClose()){
         //UpdateMusicStream(game1.ambient);
         pad.logic();
-
+        ixel1.logic();
         static bool isHovered = false; 
 
         if (currentScen == scen::menu) {
             menu1.UpdateMusic();
-            ixel1.logic();
+            
 
             bool collision = CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt);
 
@@ -109,7 +109,6 @@ int main() {
         }
         if (currentScen == scen::camera){
         camera1.switch_room();
-        ixel1.rendering();
         SetMusicVolume(ambient, 0.5f);
         }
         if (currentScen == scen::sixam){
@@ -133,6 +132,7 @@ int main() {
             }
             if (currentScen == scen::camera){
                 camera1.rendering();
+                ixel1.rendering(camera1.current_room);
             }
             if (currentScen != scen::sixam && currentScen != scen::screamer && currentScen != scen::menu){
                 pad.startAnim();
