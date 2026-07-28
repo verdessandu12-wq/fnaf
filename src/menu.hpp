@@ -18,7 +18,6 @@ public:
     void rendering();
     void renderMusic();
     void renderArrow();
-    bool logic();
     void UpdateMusic();
     void unload();
     void unloadArrow();

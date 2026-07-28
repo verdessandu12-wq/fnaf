@@ -128,6 +128,78 @@ fnaf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/build
 .PHONY : fnaf/fast
 
+src/animatronics/Anila.obj: src/animatronics/Anila.cpp.obj
+.PHONY : src/animatronics/Anila.obj
+
+# target to build an object file
+src/animatronics/Anila.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Anila.cpp.obj
+.PHONY : src/animatronics/Anila.cpp.obj
+
+src/animatronics/Anila.i: src/animatronics/Anila.cpp.i
+.PHONY : src/animatronics/Anila.i
+
+# target to preprocess a source file
+src/animatronics/Anila.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Anila.cpp.i
+.PHONY : src/animatronics/Anila.cpp.i
+
+src/animatronics/Anila.s: src/animatronics/Anila.cpp.s
+.PHONY : src/animatronics/Anila.s
+
+# target to generate assembly for a file
+src/animatronics/Anila.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Anila.cpp.s
+.PHONY : src/animatronics/Anila.cpp.s
+
+src/animatronics/Asad.obj: src/animatronics/Asad.cpp.obj
+.PHONY : src/animatronics/Asad.obj
+
+# target to build an object file
+src/animatronics/Asad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Asad.cpp.obj
+.PHONY : src/animatronics/Asad.cpp.obj
+
+src/animatronics/Asad.i: src/animatronics/Asad.cpp.i
+.PHONY : src/animatronics/Asad.i
+
+# target to preprocess a source file
+src/animatronics/Asad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Asad.cpp.i
+.PHONY : src/animatronics/Asad.cpp.i
+
+src/animatronics/Asad.s: src/animatronics/Asad.cpp.s
+.PHONY : src/animatronics/Asad.s
+
+# target to generate assembly for a file
+src/animatronics/Asad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Asad.cpp.s
+.PHONY : src/animatronics/Asad.cpp.s
+
+src/animatronics/Ixel.obj: src/animatronics/Ixel.cpp.obj
+.PHONY : src/animatronics/Ixel.obj
+
+# target to build an object file
+src/animatronics/Ixel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Ixel.cpp.obj
+.PHONY : src/animatronics/Ixel.cpp.obj
+
+src/animatronics/Ixel.i: src/animatronics/Ixel.cpp.i
+.PHONY : src/animatronics/Ixel.i
+
+# target to preprocess a source file
+src/animatronics/Ixel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Ixel.cpp.i
+.PHONY : src/animatronics/Ixel.cpp.i
+
+src/animatronics/Ixel.s: src/animatronics/Ixel.cpp.s
+.PHONY : src/animatronics/Ixel.s
+
+# target to generate assembly for a file
+src/animatronics/Ixel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fnaf.dir\build.make CMakeFiles/fnaf.dir/src/animatronics/Ixel.cpp.s
+.PHONY : src/animatronics/Ixel.cpp.s
+
 src/camera.obj: src/camera.cpp.obj
 .PHONY : src/camera.obj
 
@@ -353,6 +425,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... fnaf
+	@echo ... src/animatronics/Anila.obj
+	@echo ... src/animatronics/Anila.i
+	@echo ... src/animatronics/Anila.s
+	@echo ... src/animatronics/Asad.obj
+	@echo ... src/animatronics/Asad.i
+	@echo ... src/animatronics/Asad.s
+	@echo ... src/animatronics/Ixel.obj
+	@echo ... src/animatronics/Ixel.i
+	@echo ... src/animatronics/Ixel.s
 	@echo ... src/camera.obj
 	@echo ... src/camera.i
 	@echo ... src/camera.s

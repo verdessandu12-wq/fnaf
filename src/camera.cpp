@@ -69,4 +69,7 @@ void camera::rendering(){
     EndShaderMode();
     DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
     DrawRectangleRec(button[current_room], WHITE);
+    int cr = current_room + 1;
+    string current_cam = to_string(cr);
+    DrawText(current_cam.c_str(), button[current_room].x, button[current_room].y, 15, GREEN);
 }

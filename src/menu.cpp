@@ -9,18 +9,6 @@ void menu::import_variable() {
     backMusic = LoadMusicStream("../song/2017-youtube-background-music-low-quality.mp3");
     arrow = LoadTexture("../assets/menu/arrow.png");
     click = LoadSound("../song/button_off.mp3");
-
-}
-
-bool menu::logic() {
-    if(CheckCollisionPointRec(GetMousePosition(), Play_Butt)) {
-        if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-            return true;
-        }
-    }
-    else {
-        return false;
-    }
 }
 
 void menu::rendering() {
