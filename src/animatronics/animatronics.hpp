@@ -8,13 +8,17 @@ using namespace std;
 
 class animatronics{
     public:
-    int current_room, random_room;
-    float timer;
+    int current_room_animatronic, random_room;
+    float timer, nightCoef;
     vector<imgClass> animatronic;
-    void importVariable();
-    void rendering();
-    void logic();
-    void unload();
+    virtual void importVariable();
+    virtual void rendering();
+    virtual void logic();
+    ~animatronics(){
+        for(int i = 0; i < animatronic.size(); i++){
+            UnloadTexture(animatronic[i].texture);
+        }
+    }
 };
 
 #endif

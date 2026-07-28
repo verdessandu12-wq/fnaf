@@ -4,6 +4,7 @@
 #include "sixam.hpp"
 #include "screamer.hpp"
 #include "pad.hpp"
+#include "animatronics/Ixel.hpp"
 #include "raylib.h"
 #include <iostream>
 
@@ -34,6 +35,9 @@ int main() {
     animPad pad;
     sixam sixamh;
     menu menu1;
+
+    //CLASS ANIMATRONICS OBJECTS
+    Ixel ixel1;
     //PlayMusicStream(game1.ambient);
 
     //IMPORT VARIABLES
@@ -42,6 +46,7 @@ int main() {
     pad.importVariable();
     sixamh.importVariable();   
     menu1.import_variable();
+    ixel1.importVariable();
 
     //IMPORTANT VARIABLES
     menu1.renderMusic();
@@ -58,6 +63,7 @@ int main() {
 
         if (currentScen == scen::menu) {
             menu1.UpdateMusic();
+            ixel1.logic();
 
             bool collision = CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt);
 
@@ -103,6 +109,7 @@ int main() {
         }
         if (currentScen == scen::camera){
         camera1.switch_room();
+        ixel1.rendering();
         SetMusicVolume(ambient, 0.5f);
         }
         if (currentScen == scen::sixam){

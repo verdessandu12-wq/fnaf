@@ -20,7 +20,8 @@
 # ====================================================================
 .vscode/
 build/
-CMakeLists.txt
+# CMakeLists.txt
+.VSCodeCounter
 
 # ====================================================================
 # Sistemul de operare și altele
