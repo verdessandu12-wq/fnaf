@@ -65,21 +65,29 @@ int main() {
             menu1.UpdateMusic();
             
 
-            bool collision = CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt);
+            bool collision1 = CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt);
+            bool collision2 = CheckCollisionPointRec(GetMousePosition(), menu1.continue_Butt);
 
-            if (collision) {
+
+            if (collision1 || collision2) {
                 if (isHovered == false) {
                     menu1.clickSound();
                     isHovered = true;
                 }
 
-                if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-                    currentScen = scen::gameplay;
-                }
             } else {
                 isHovered = false; 
             }
+
+            if (collision1 && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                currentScen = scen::gameplay;
+            }
+
+            if (collision2 && IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                currentScen = scen::gameplay;
+            }
         }
+        
 
         if(IsKeyPressed(KEY_ESCAPE)){
             break;
@@ -123,7 +131,10 @@ int main() {
             if (currentScen == scen::menu){
                 menu1.rendering();
                 if (CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt)) {
-                    menu1.renderArrow();
+                    menu1.renderArrow1();
+                }
+                if (CheckCollisionPointRec(GetMousePosition(), menu1.continue_Butt)) {
+                    menu1.renderArrow2();
                 }
             }
 
