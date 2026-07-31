@@ -1,5 +1,4 @@
 #include "camera.hpp"
-#include "Ixel.hpp"
 #include <vector>
 #include <string>
 #include <iostream>

@@ -10,7 +10,7 @@ class Ixel : public animatronics {
     Shader shader;
     Ixel(camera &cam) : camera1(cam){}
     void importVariable()override;
-    void rendering(int current_room)override;
+    void rendering()override;
     void logic()override;
 };
 

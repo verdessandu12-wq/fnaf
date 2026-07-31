@@ -132,7 +132,7 @@ int main() {
             }
             if (currentScen == scen::camera){
                 camera1.rendering();
-                ixel1.rendering(camera1.current_room);
+                ixel1.rendering();
             }
             if (currentScen != scen::sixam && currentScen != scen::screamer && currentScen != scen::menu){
                 pad.startAnim();

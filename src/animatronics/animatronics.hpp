@@ -12,7 +12,7 @@ class animatronics{
     float timer, nightCoef;
     vector<imgClass> animatronic;
     virtual void importVariable() = 0;
-    virtual void rendering(int current_room) = 0;
+    virtual void rendering() = 0;
     virtual void logic() = 0;
     ~animatronics(){
         for(int i = 0; i < animatronic.size(); i++){

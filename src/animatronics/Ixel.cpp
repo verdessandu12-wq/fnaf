@@ -19,17 +19,26 @@ void Ixel::importVariable(){
         animatronic.emplace_back(tempTexture, sourceTemp, destTemp, originTemp, 0.0f, WHITE);
     }
     nightCoef = 1;
-    current_room_animatronic = 0;
+    current_room_animatronic = 2;
 }
 void Ixel::logic(){
     timer += GetFrameTime();
+    if(timer >= 2.0f * nightCoef){
+        switch(current_room_animatronic){
+        case 2:int tempRandom = GetRandomValue(0, 100);
+        if(tempRandom <= 40)current_room_animatronic = 3;
+        
+        else if(tempRandom >= 99)current_room_animatronic = 0;
+        else current_room_animatronic = 1;
+        timer = 0;
+        break;
+        case 1:
+        break;
+    }
+    }
     //cout << "Logica merge";
 }
-void Ixel::rendering(int current_room){
-    if(timer >= 1.1f){
-    cout << current_room;
-    timer = 0;
-    }
+void Ixel::rendering(){
     if(current_room_animatronic == camera1.current_room){
     BeginShaderMode(shader);
         DrawTexturePro(animatronic[current_room_animatronic].texture, animatronic[current_room_animatronic].source, animatronic[current_room_animatronic].dest, animatronic[current_room_animatronic].origin, animatronic[current_room_animatronic].angle, animatronic[current_room_animatronic].col);
