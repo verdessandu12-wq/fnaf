@@ -32,7 +32,7 @@ void Ixel::logic(){
         else current_room_animatronic = 1;
         timer = 0;
         break;
-        case 1:
+        //case 1:
         break;
     }
     }

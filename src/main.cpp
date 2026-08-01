@@ -23,7 +23,7 @@ int main() {
     scen currentScen = scen::menu;
     float w = 1280, h = 720;
     bool inCamera = false;
-    //SetConfigFlags(FLAG_FULLSCREEN_MODE);
+    SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
 
