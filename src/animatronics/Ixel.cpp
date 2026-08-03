@@ -40,7 +40,7 @@ void Ixel::logic(){
         break;
         case 1:
         if(tempRandom <= 50)current_room_animatronic = 3;
-        else if(tempRandom > 50){
+        else if(tempRandom > 40 && tempRandom < 99){
             if(tempRandom % 2 == 0){
                 current_room_animatronic = 9;
             }
@@ -48,15 +48,7 @@ void Ixel::logic(){
                 current_room_animatronic = 8;
             }
         }
-        /*else if(tempRandom >= 99){
-            if(tempRandom % 2 == 0){
-                current_room_animatronic = 5;
-            }
-            else if(tempRandom % 2 != 0){
-                current_room_animatronic = 6;
-            }
-        }*/
-
+        else if(tempRandom >= 99)current_room_animatronic = 0;
         timer = 0.0f;
         break;
         case 2:

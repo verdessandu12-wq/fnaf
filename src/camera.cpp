@@ -10,36 +10,42 @@ void camera::import_variable(){
     w = 1280.0f;
     h = 720.0f;
     map = LoadTexture("../assets/map.png");
-    posMap = {w / 2 + 100, h / 2 + 100};
+    posMap = {w / 2 + 100, h / 2};
     //PlayMusicStream(game1.ambient);
     for (int i = 1; i < 11; i++){
+        //Color colorTemp = 
         string cam = "../assets/camera/" + to_string(i) + "Camera.png";
         Texture2D cameraTemp = LoadTexture(cam.c_str());
         Rectangle sourceTemp = {0.0f, 0.0f, (float)cameraTemp.width, (float)cameraTemp.height};
         Rectangle destTemp = {0.0f, 0.0f, (float)w, (float)h};
         Vector2 originTemp = {0.0f, 0.0f};
+<<<<<<< HEAD
         cameraVec.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, WHITE);
+=======
+        camera.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, GRAY);
+>>>>>>> a58e42d4ca696a29f1128794aaa9932ce7d9879e
     }
     //1
-    button.push_back({926, 460, 60, 20});
+    button.push_back({1019 ,360, 30, 20});
     //2
-    button.push_back({815, 496, 101, 93});
+    button.push_back({852 ,412, 30, 20});
     //3
-    button.push_back({827, 471, 74, 24});
+    button.push_back({871 ,376, 30, 20});
     //4
-    button.push_back({741, 504, 48, 62});
+    button.push_back({743, 431, 30, 20});
     //5
-    button.push_back({776, 614, 26, 38});
+    button.push_back({791, 592, 30, 20});
     //6
-    button.push_back({815, 655, 13, 7});
+    button.push_back({854, 653, 30, 20});
     //7
-    button.push_back({906, 655, 10, 7});
+    button.push_back({987, 653, 30, 20});
     //8
-    button.push_back({959, 610, 84, 63});
+    button.push_back({1074, 588, 30, 20});
     //9
-    button.push_back({970, 561, 65, 34});
+    button.push_back({1075, 407, 30, 20});
     //10
-    button.push_back({963, 492, 67, 32});
+    button.push_back({1085 ,512, 30, 20});
+
     shader = LoadShader(0, "../shader/first_shader.fs");
     if (!IsShaderValid(shader)){
         TraceLog(LOG_ERROR, "Critical invalid");
@@ -49,16 +55,17 @@ void camera::switch_room(){
     //UpdateMusicStream(game1.ambient);
     //SetMusicVolume(game1.ambient, 0.5f);
     if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
-        //cout << GetMouseX() << " " << GetMouseY() << endl;
+        cout << GetMouseX() << " " << GetMouseY() << endl;
 
     }
      if(IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
     for(int i = 0; i < button.size(); i++){
         //DrawRectangleRec(button[i], WHITE);
-        if(CheckCollisionRecs({(float)GetMouseX(), (float)GetMouseY(), 2, 3}, button[i])){
+        Vector2 mousePosTemp = GetMousePosition();
+       if(CheckCollisionPointRec(mousePosTemp, button[i]))
             //cout << "Ai apasat pe camera: " << i << endl;
             current_room = i;
-        }
+        
     }
 }
 
@@ -67,10 +74,21 @@ void camera::rendering(){
     BeginShaderMode(shader);
     DrawTexturePro(cameraVec[current_room].texture, cameraVec[current_room].source, cameraVec[current_room].dest, cameraVec[current_room].origin, cameraVec[current_room].angle, cameraVec[current_room].col);
     EndShaderMode();
+<<<<<<< HEAD
     DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
     DrawRectangleRec(button[current_room], WHITE);
     int cr = current_room + 1;
     string current_cam = to_string(cr);
     DrawText(current_cam.c_str(), button[current_room].x + button[current_room].width / 2 - 15.0f / 2, button[current_room].y + button[current_room].height / 2 - 15.0f / 2, 15, GREEN);
+=======
+    DrawTextureEx(map, posMap, 0.0f, 0.6f, Fade(WHITE, 0.4f));
+    for(int i = 0; i < button.size(); i++){
+        int tempCR = i + 1;
+            DrawRectangleRec(button[i], {145, 145, 145, 255});
+            string current_cam = "CAM\n" + to_string(tempCR);
+    DrawText(current_cam.c_str(), button[i].x + button[i].width / 2 - 10, button[i].y + button[i].height / 2 - 10, 10, GREEN);
+    }
+
+>>>>>>> a58e42d4ca696a29f1128794aaa9932ce7d9879e
     
 }
