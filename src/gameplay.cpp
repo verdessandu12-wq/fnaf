@@ -20,9 +20,9 @@ void gameplay::rendering(){
 }
 void gameplay::move_camera(){
     if (IsKeyDown(KEY_A) && x > 0){
-        x -= 30;
+        x -= 40;
     }                                                                                                          
     if (IsKeyDown(KEY_D) && x < 4300 - texture_rect.width){
-        x += 30;
+        x += 40;
     }
 }

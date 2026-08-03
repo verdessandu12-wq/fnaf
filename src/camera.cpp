@@ -1,7 +1,7 @@
 #include "camera.hpp"
 #include <vector>
 #include <string>
-//#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -19,11 +19,8 @@ void camera::import_variable(){
         Rectangle sourceTemp = {0.0f, 0.0f, (float)cameraTemp.width, (float)cameraTemp.height};
         Rectangle destTemp = {0.0f, 0.0f, (float)w, (float)h};
         Vector2 originTemp = {0.0f, 0.0f};
-<<<<<<< HEAD
         cameraVec.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, WHITE);
-=======
-        camera.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, GRAY);
->>>>>>> a58e42d4ca696a29f1128794aaa9932ce7d9879e
+        //camera.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, GRAY);
     }
     //1
     button.push_back({1019 ,360, 30, 20});
@@ -55,7 +52,7 @@ void camera::switch_room(){
     //UpdateMusicStream(game1.ambient);
     //SetMusicVolume(game1.ambient, 0.5f);
     if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
-        cout << GetMouseX() << " " << GetMouseY() << endl;
+        //cout << GetMouseX() << " " << GetMouseY() << endl;
 
     }
      if(IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
@@ -74,21 +71,16 @@ void camera::rendering(){
     BeginShaderMode(shader);
     DrawTexturePro(cameraVec[current_room].texture, cameraVec[current_room].source, cameraVec[current_room].dest, cameraVec[current_room].origin, cameraVec[current_room].angle, cameraVec[current_room].col);
     EndShaderMode();
-<<<<<<< HEAD
-    DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
+    //DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
     DrawRectangleRec(button[current_room], WHITE);
     int cr = current_room + 1;
     string current_cam = to_string(cr);
     DrawText(current_cam.c_str(), button[current_room].x + button[current_room].width / 2 - 15.0f / 2, button[current_room].y + button[current_room].height / 2 - 15.0f / 2, 15, GREEN);
-=======
-    DrawTextureEx(map, posMap, 0.0f, 0.6f, Fade(WHITE, 0.4f));
+    DrawTextureEx(map, posMap, 0.0f, 0.6f, Fade(WHITE,0.4f));
     for(int i = 0; i < button.size(); i++){
         int tempCR = i + 1;
             DrawRectangleRec(button[i], {145, 145, 145, 255});
             string current_cam = "CAM\n" + to_string(tempCR);
     DrawText(current_cam.c_str(), button[i].x + button[i].width / 2 - 10, button[i].y + button[i].height / 2 - 10, 10, GREEN);
     }
-
->>>>>>> a58e42d4ca696a29f1128794aaa9932ce7d9879e
-    
 }

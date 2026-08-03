@@ -22,13 +22,9 @@ enum class scen{
 int main() {
     scen currentScen = scen::menu;
     float w = 1280, h = 720;
-<<<<<<< HEAD
     bool inCamera = false, inGame = false;
     //SetConfigFlags(FLAG_FULLSCREEN_MODE);
-=======
-    bool inCamera = false;
     SetConfigFlags(FLAG_FULLSCREEN_MODE);
->>>>>>> a58e42d4ca696a29f1128794aaa9932ce7d9879e
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
     //CLASS OBJECTS
