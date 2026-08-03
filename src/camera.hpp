@@ -10,7 +10,7 @@ class camera {
     gameplay game1;
     float w, h;
     Shader shader;
-    vector<imgClass> camera;
+    vector<imgClass> cameraVec;
     vector<Rectangle> button; 
     Texture2D map;
     Vector2 posMap;
@@ -19,8 +19,8 @@ class camera {
     void rendering();
     void switch_room();
     ~camera(){
-        for(int i = 0; i < camera.size(); i++){
-            UnloadTexture(camera[i].texture);
+        for(int i = 0; i < cameraVec.size(); i++){
+            UnloadTexture(cameraVec[i].texture);
         }
         UnloadTexture(map);
     }

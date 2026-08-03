@@ -1,7 +1,7 @@
 #include "camera.hpp"
 #include <vector>
 #include <string>
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
@@ -18,7 +18,7 @@ void camera::import_variable(){
         Rectangle sourceTemp = {0.0f, 0.0f, (float)cameraTemp.width, (float)cameraTemp.height};
         Rectangle destTemp = {0.0f, 0.0f, (float)w, (float)h};
         Vector2 originTemp = {0.0f, 0.0f};
-        camera.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, WHITE);
+        cameraVec.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, WHITE);
     }
     //1
     button.push_back({926, 460, 60, 20});
@@ -65,12 +65,12 @@ void camera::switch_room(){
 }
 void camera::rendering(){
     BeginShaderMode(shader);
-    DrawTexturePro(camera[current_room].texture, camera[current_room].source, camera[current_room].dest, camera[current_room].origin, camera[current_room].angle, camera[current_room].col);
+    DrawTexturePro(cameraVec[current_room].texture, cameraVec[current_room].source, cameraVec[current_room].dest, cameraVec[current_room].origin, cameraVec[current_room].angle, cameraVec[current_room].col);
     EndShaderMode();
     DrawTextureEx(map, posMap, 0.0f, 0.4f, Fade(WHITE, 0.7f));
     DrawRectangleRec(button[current_room], WHITE);
     int cr = current_room + 1;
     string current_cam = to_string(cr);
-    DrawText(current_cam.c_str(), button[current_room].x + button[current_room].width / 2 - 15 / 2, button[current_room].y + button[current_room].height / 2 - 15 / 2, 15, GREEN);
+    DrawText(current_cam.c_str(), button[current_room].x + button[current_room].width / 2 - 15.0f / 2, button[current_room].y + button[current_room].height / 2 - 15.0f / 2, 15, GREEN);
     
 }

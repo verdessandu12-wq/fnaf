@@ -22,24 +22,19 @@ enum class scen{
 int main() {
     scen currentScen = scen::menu;
     float w = 1280, h = 720;
-    bool inCamera = false;
+    bool inCamera = false, inGame = false;
     //SetConfigFlags(FLAG_FULLSCREEN_MODE);
     InitWindow(w, h, "FNaF");
     InitAudioDevice();
-
-    Shader vignette = LoadShader(0, "../shader/vignete.fs");
-
     //CLASS OBJECTS
     gameplay game1;
     camera camera1;
     animPad pad;
     sixam sixamh;
     menu menu1;
-
     //CLASS ANIMATRONICS OBJECTS
     Ixel ixel1(camera1);
     //PlayMusicStream(game1.ambient);
-
     //IMPORT VARIABLES
     game1.import_variable();
     camera1.import_variable();
@@ -47,22 +42,20 @@ int main() {
     sixamh.importVariable();   
     menu1.import_variable();
     ixel1.importVariable();
-
     //IMPORTANT VARIABLES
     menu1.renderMusic();
     Music ambient = LoadMusicStream("../song/ambient.mp3");
-
     PlayMusicStream(ambient);
-
     SetTargetFPS(60);
     while(!WindowShouldClose()){
         //UpdateMusicStream(game1.ambient);
         pad.logic();
-        ixel1.logic();
+        if(inGame)ixel1.logic();
         static bool isHovered = false; 
 
         if (currentScen == scen::menu) {
             menu1.UpdateMusic();
+            inGame = false;
             
 
             bool collision1 = CheckCollisionPointRec(GetMousePosition(), menu1.Play_Butt);
@@ -90,6 +83,7 @@ int main() {
         
 
         if(IsKeyPressed(KEY_ESCAPE)){
+            inGame = false;
             break;
         } 
 
@@ -114,13 +108,16 @@ int main() {
         if (currentScen == scen::gameplay){
         game1.move_camera();
         SetMusicVolume(ambient, 1.0f);
+        inGame = true;
         }
         if (currentScen == scen::camera){
         camera1.switch_room();
         SetMusicVolume(ambient, 0.5f);
+        inGame = true;
         }
         if (currentScen == scen::sixam){
         sixamh.logic();
+        inGame = false;
         }
         if(sixamh.globalTimer >= sixamh.final){
             currentScen == scen::sixam;
