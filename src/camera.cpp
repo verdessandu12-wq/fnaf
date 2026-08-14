@@ -44,10 +44,11 @@ void camera::import_variable(){
     button.push_back({1085 ,512, 40, 25});
 
     shader = LoadShader(0, "../shader/first_shader.fs");
-    if (!IsShaderValid(shader)){
+    if (!IsShaderReady(shader)){
         TraceLog(LOG_ERROR, "Critical invalid");
     }
 }
+
 void camera::switch_room(){
     //UpdateMusicStream(game1.ambient);
     //SetMusicVolume(game1.ambient, 0.5f);
