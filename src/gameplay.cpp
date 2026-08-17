@@ -1,5 +1,6 @@
 #include "gameplay.hpp"
 #include "raylib.h"
+#include "stb_image.h"
 using namespace std;
 
 void gameplay::import_variable(){

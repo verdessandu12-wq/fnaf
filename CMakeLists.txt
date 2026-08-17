@@ -3,6 +3,7 @@ project(fnaf CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_compile_definitions(SUPPORT_FILEFORMAT_JPG)
 include(FetchContent)
 FetchContent_Declare(
     raylib

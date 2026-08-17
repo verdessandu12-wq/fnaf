@@ -5,6 +5,7 @@
 #include <string>
 #include <chrono>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 void animPad::importVariable(){
@@ -39,7 +40,7 @@ void animPad::logic(){
         tap = false;
     }
     timer += GetFrameTime();
-    if(timer >= 0.05f){
+    if(sin(timer) >= 0.05f){
     num += coef;
     timer = 0.0f;
     }
