@@ -1,7 +1,7 @@
 #include "camera.hpp"
 #include <vector>
 #include <string>
-#include <iostream>
+//#include <iostream>
 
 using namespace std;
 
