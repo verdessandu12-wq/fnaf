@@ -23,31 +23,32 @@ void camera::import_variable(){
         //camera.emplace_back(cameraTemp, sourceTemp, destTemp, originTemp, 0.0f, GRAY);
     }
     //1
-    button.push_back({1019 ,360, 30, 20});
+    button.push_back({1059 ,375, 40, 25});
     //2
-    button.push_back({852 ,412, 30, 20});
+    button.push_back({880 ,534, 40, 25});
     //3
-    button.push_back({871 ,376, 30, 20});
+    button.push_back({871 ,376, 40, 25});
     //4
-    button.push_back({743, 431, 30, 20});
+    button.push_back({785, 497,40, 25});
     //5
-    button.push_back({791, 592, 30, 20});
+    button.push_back({791, 592, 40, 25});
     //6
-    button.push_back({854, 653, 30, 20});
+    button.push_back({854, 653, 40, 25});
     //7
-    button.push_back({987, 653, 30, 20});
+    button.push_back({987, 653, 40, 25});
     //8
-    button.push_back({1074, 588, 30, 20});
+    button.push_back({1074, 588, 40, 25});
     //9
-    button.push_back({1075, 407, 30, 20});
+    button.push_back({1077, 434, 40, 25});
     //10
-    button.push_back({1085 ,512, 30, 20});
+    button.push_back({1085 ,512, 40, 25});
 
     shader = LoadShader(0, "../shader/first_shader.fs");
-    if (!IsShaderValid(shader)){
+    if (!IsShaderReady(shader)){
         TraceLog(LOG_ERROR, "Critical invalid");
     }
 }
+
 void camera::switch_room(){
     //UpdateMusicStream(game1.ambient);
     //SetMusicVolume(game1.ambient, 0.5f);
