@@ -108,12 +108,15 @@ int main() {
         
         if (currentScen == scen::gameplay){
         game1.move_camera();
+        game1.mindbar_logic();
         SetMusicVolume(ambient, 1.0f);
         inGame = true;
+
         }
         if (currentScen == scen::camera){
         camera1.switch_room();
-        SetMusicVolume(ambient, 0.5f);
+        game1.mindbar_logic();
+        SetMusicVolume(ambient, 0.7f);
         inGame = true;
         }
         if (currentScen == scen::sixam){
@@ -138,6 +141,7 @@ int main() {
 
             if (currentScen == scen::gameplay){
                 game1.rendering();
+                game1.mindbar_rendering();
             }
             if (currentScen == scen::camera){
                 camera1.rendering();
