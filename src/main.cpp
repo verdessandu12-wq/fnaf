@@ -37,11 +37,11 @@ int main() {
     Ixel ixel1(camera1);
     //PlayMusicStream(game1.ambient);
     //IMPORT VARIABLES
-    game1.import_variable();
     camera1.import_variable();
-    pad.importVariable();
-    sixamh.importVariable();   
     menu1.import_variable();
+                game1.import_variable();
+    sixamh.importVariable();
+    pad.importVariable();   
     ixel1.importVariable();
     //IMPORTANT VARIABLES
     menu1.renderMusic();

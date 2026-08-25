@@ -10,7 +10,8 @@ class gameplay {
     float x, y, cameraX;
     Vector2 origin;
     Rectangle texture_rect, dest;
-    int current_mindbar, status_mindbar, timer_mindbar, coef_mindbar;
+    short current_mindbar, status_mindbar;
+    float timer_mindbar, coef_mindbar;
     vector<imgClass> mindbar;
     bool gameover;
     void import_variable();
